@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+            min-height: 200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="http://localhost:9900/api/uploadfile" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>上传单个文件</legend>
+            <input type="file" name="file" id="file" value="" />
+            <br><br>
+            <input type="submit" value="提交" />
+        </fieldset>
+    </form>
+    <br>
+    <form action="http://localhost:9900/api/uploadfiles" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>上传多个文件</legend>
+            <input type="file" name="file" id="file" value="" multiple="multiple" />
+            <br><br>
+            <input type="submit" value="提交" />
+        </fieldset>
+    </form>
+
+    </div>
+    <!-- <form action="http://localhost:8080/api/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" value="" multiple="multiple" />
+        <input type="submit" value="提交" />
+    </form> -->
+</body>
+
+</html>
